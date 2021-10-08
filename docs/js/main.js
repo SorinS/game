@@ -56,9 +56,8 @@ function init() {
     pile = [];
     draw = [];
     cardArr = [];
-    stacks = [[],[],[],[],[],[],[]]
-    stacksFaceUp = [1,1,1,1,1,1,1]
-    aces = [[],[],[],[]]
+    stacks = [[],[],[]]
+    stacksFaceUp = [1,1,1]
     winner = null;
     clickedCard = null;
     secondsPlayed = null;
@@ -77,7 +76,6 @@ function render() {
     renderStacks();
     renderPile();
     renderDraw();
-    renderAces();
     getScore();
     updateScore();
     if(checkWinner()) {
